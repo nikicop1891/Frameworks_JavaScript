@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <title>Juego</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+  <link rel="stylesheet" href="css/estilos.css" type="text/css">
+  <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+</head>
+<body onload="init()">
+  <div class="main-container">
+    <h1 class="main-titulo">Match Game</h1>
+    <p id="myP" class="main-titulo">This is an example paragraph.</p>
+    <p id="t1" class="main-titulo">titulo 1</p>
+    <!--<div class="panel-tablero">
+      <div class="col-1 row">
+      </div>
+      <div class="col-2 row">
+      </div>
+      <div class="col-3 row">
+      </div>
+      <div class="col-4 row">
+      </div>
+      <div class="col-5 row">
+      </div>
+      <div class="col-6 row">
+      </div>
+      <div class="col-7 row">
+      </div>
+    </div>-->
+<canvas id="cvs" width="805" height="805" style="margin: 10px auto; border: solid 1px #000; background:blue";></canvas>
+
+    <div class="panel-score">
+      <div class="score">
+        <h2 class="data-titulo">Puntuación</h2>
+        <span class="data-info" id="score-text">0</span>
+      </div>
+      <div class="moves">
+        <h2 class="data-titulo">Movimientos</h2>
+        <span class="data-info" id="movimientos-text">0</span>
+      </div>
+      <div class="time">
+        <h2 class="data-titulo">Tiempo</h2>
+        <div class="data-info" id="timer">02:00</div>
+      </div>
+      <div class="buttons">
+        <button class="btn-reinicio">Iniciar</button>
+      </div>
+    </div>
+
+    <p class="coups" style="background-image: url('images/score.png'); border: solid 5px purple; border-radius: 15px; height: 180px; text-align: center;">Coups Restants <br>
+    <span id="coups">10</span></p>
+    <p class="score" style="background-image: url('images/score.png'); border: solid 5px purple; border-radius: 15px; height: 180px; text-align: center;">Score<br>
+    <span id="score"></span></p>
+    <div id="progress">
+        <div id="bar"></div>
+        <div id="label">0%</div>
+    </div>
+
+  </div>
+  <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/timer.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
